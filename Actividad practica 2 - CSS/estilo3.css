@@ -1,0 +1,12 @@
+header{
+    background-color: lightblue;
+    height: 125px;
+}
+main{
+    background-color: lightseagreen;
+    height: 150px;
+}
+footer{
+    background-color: pink;
+    height: 100px;
+}
