@@ -129,3 +129,10 @@ l3.addEventListener("mouseover",function(){
 l3.addEventListener("mouseout",function(){
     l3.style.background = "white";
 });
+
+//Ejercicio 10
+let campo = document.getElementById("texto");
+
+campo.addEventListener("keydown", function(event){
+    console.log("Tecla presionada:", event.key);
+});
