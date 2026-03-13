@@ -21,8 +21,42 @@ let sumatoria = Sumar(12, 13)
 console.log("El resultado de la suma es: "+sumatoria)
 
 //ejercicio 4
-let boton = getElementById("btnColor");
+/*let boton = getElementById("btnColor");
 
 boton.addEventListener("click", function(){
 document.body.style.backgroundColor = "blue";
 });
+*/
+//Ejercicio 5 
+for (let i = 1; i <= 1000; i++) {
+    let esPrimo = true;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            esPrimo = false;
+        }
+    }
+
+    if (esPrimo) {
+        console.log(i);
+    }
+}
+
+//Ejercicio 6
+function NumPerfecto(numero){
+    let suma = 0;
+
+    for(let i = 1; i < numero; i++){
+        if(numero % i === 0){
+            suma += i;
+        }
+    }
+
+    if(suma === numero){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(NumPerfecto(6))

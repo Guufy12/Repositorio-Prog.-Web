@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web con JQuery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-4.0.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js>"></script> -->
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $(this).hide();
+            });
+        });
+        $(document).ready(function(){
+            $("h2").click(function(){
+                alert("Hola me clickeaste");
+            });
+        });
+    </script>
+</head>
+
+<body>
+        
+    <header>
+<h1>Esta Web usa: JQuery, cuando me clickees desaparecere</h1>
+    </header>
+    <main>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit harum eum odio ex fuga praesentium inventore, ipsam maxime adipisci mollitia culpa provident hic aut minima tempore excepturi obcaecati sed repellat.
+</p>
+<h2>Click para saludar</h2>
+    </main>
+    <footer>
+@Carlos Perez-2026
+    </footer>
+</body>
+</html>
