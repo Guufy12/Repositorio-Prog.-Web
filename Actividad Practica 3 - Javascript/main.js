@@ -101,3 +101,31 @@ let btn8 = document.getElementById("btn8");
 btn8.addEventListener("click", function(){
     console.log("El boton fue clickeado")
 });
+
+//Ejercicio 9
+let l1 = document.getElementById("l1");
+l1.addEventListener("mouseover",function(){
+    l1.style.background = "black";
+});
+
+l1.addEventListener("mouseout",function(){
+    l1.style.background = "white";
+});
+
+let l2 = document.getElementById("l2");
+l2.addEventListener("mouseover",function(){
+    l2.style.background = "yellow";
+});
+
+l2.addEventListener("mouseout",function(){
+    l2.style.background = "white";
+});
+
+let l3 = document.getElementById("l3");
+l3.addEventListener("mouseover",function(){
+    l3.style.background = "pink";
+});
+
+l3.addEventListener("mouseout",function(){
+    l3.style.background = "white";
+});
