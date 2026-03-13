@@ -21,12 +21,13 @@ let sumatoria = Sumar(12, 13)
 console.log("El resultado de la suma es: "+sumatoria)
 
 //ejercicio 4
-/*let boton = getElementById("btnColor");
+let boton = document.getElementById("btnColor");
 
 boton.addEventListener("click", function(){
-document.body.style.backgroundColor = "blue";
+document.body.style.backgroundColor = "lightblue";
 });
-*/
+
+
 //Ejercicio 5 
 for (let i = 1; i <= 1000; i++) {
     let esPrimo = true;
@@ -60,3 +61,43 @@ function NumPerfecto(numero){
 }
 
 console.log(NumPerfecto(6))
+
+//Ejercicio 7
+let numero = Number(prompt("Ingresa un numero"));
+
+let esPrimo = true;
+let suma = 0;
+
+if (numero <= 1) {
+    esPrimo = false;
+} else {
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            esPrimo = false;
+            break;
+        }
+    }
+}
+
+for (let i = 1; i < numero; i++) {
+    if (numero % i === 0) {
+        suma += i;
+    }
+}
+
+let esPerfecto = (suma === numero);
+if (esPrimo && esPerfecto) {
+    alert("El número es primo y perfecto");
+} else if (esPrimo) {
+    alert("El número es primo");
+} else if (esPerfecto) {
+    alert("El número es perfecto");
+} else {
+    alert("El número no es primo ni perfecto");
+}
+
+//ejercicio 8
+let btn8 = document.getElementById("btn8");
+btn8.addEventListener("click", function(){
+    console.log("El boton fue clickeado")
+});
