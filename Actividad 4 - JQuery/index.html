@@ -35,6 +35,22 @@
         $("#lluvialigera").click(function(){
             $(this).css({"width":"150px", "height":"200px"});
         });
+        //ejercicio 6
+        $("td").hover(function(){
+            $(this).css("background-color","lightgray")
+        })
+        $("td").mouseout(function(){
+        $(this).css("background-color","white")
+        })
+        //Ejercicio 7
+             $("#Enviar2").click(function(){
+            valor = $("#txtvalor2").val().trim();
+            if(valor === "")
+            alert("El formulario no puede estar vacio");
+        else{
+            $(valor).submit();
+        }
+        });
     });
     </script>
 </head>
@@ -73,6 +89,39 @@
 <label for="valor">Ingresa un valor</label>
 <input type="text" id="txtvalor">
 <button type="button" id="Enviar">Enviar</button>
+</form>
+
+<table>
+<tr>
+    <th>Lluvia suave</th>
+    <th>Lluvia moderada</th>
+    <th>Lluvia fuerte</th>
+</tr>
+<tr>
+    <td>tranquila</td>
+    <td>consante</td>
+    <td>ventosa</td>
+</tr>
+<tr>
+    <td>Relajante</td>
+    <td>Molesta</td>
+    <td>Humeda</td>
+</tr>
+<tr>
+    <td>Relajante</td>
+    <td>Molesta</td>
+    <td>Humeda</td>
+</tr>
+<tr>
+    <td>Relajante</td>
+    <td>Molesta</td>
+    <td>Humeda</td>
+</tr>
+</table>
+<form>
+<label for="valor">Ingresa un valor</label>
+<input type="text" id="txtvalor2">
+<button type="button" id="Enviar2">Enviar</button>
 </form>
     </main>
     <footer>Carlos Perez 3/26</footer>
