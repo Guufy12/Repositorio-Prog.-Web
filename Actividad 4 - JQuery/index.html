@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad JQuery</title>
-    <script src="jquery-4.0.0.min.js"></script>
-    <script>
+        <script src="jquery-4.0.0.min.js"></script>
+            <script>
+        //Ejercicio 1
         $(document).ready(function(){
             $("p").css("color","blue")
 
-
+            //Ejercicio 2
         $("#ocultar").click(function(){
             $("#lluvia").hide();
+ });
+        //Ejercicio 3
+        $("#azul").hover(function(){
+            $("#azul").css("background-color", "lightblue")
+        });
+                $("#rosa").hover(function(){
+            $("#rosa").css("background-color", "pink")
+        });
+                $("#gris").hover(function(){
+            $("#gris").css("background-color", "gray")
+        });
 
+        //Ejercicio 4
+        $("#Enviar").click(function(){
+            valor = $("#txtvalor").val();
+            alert(valor);
+        });
+
+        //Ejercicio 5
+        $("#lluvialigera").click(function(){
+            $(this).css({"width":"150px", "height":"200px"});
         });
     });
     </script>
@@ -24,7 +45,11 @@
 </h1>
     </header>
     <nav>
-
+<ul>
+    <li id="azul">Lluvia suave</li>
+    <li id="rosa">Lluvia moderada</li>
+    <li id="gris">Lluvia fuerte</li>
+</ul>
     </nav>
     <hr>
     <main>
@@ -40,10 +65,15 @@
 <h2>
     Por que nos relaja la lluvia?
 </h2>
-<img src="https://plus.unsplash.com/premium_photo-1666717576644-5701d3406840?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGx1dmlhfGVufDB8fDB8fHww" alt="Lluvia tranquila" width="300px" height="400px">
+<img src="https://plus.unsplash.com/premium_photo-1666717576644-5701d3406840?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGx1dmlhfGVufDB8fDB8fHww" alt="Lluvia tranquila" width="300px" height="400px" id="lluvialigera">
 <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam dolores in voluptatum dolorem earum rem! Autem labore animi delectus laborum sapiente vel blanditiis, magnam, similique atque, quasi nesciunt! Porro!
 </p>
+<form>
+<label for="valor">Ingresa un valor</label>
+<input type="text" id="txtvalor">
+<button type="button" id="Enviar">Enviar</button>
+</form>
     </main>
     <footer>Carlos Perez 3/26</footer>
 </body>
