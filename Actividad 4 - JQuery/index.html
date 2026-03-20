@@ -51,6 +51,17 @@
             $(valor).submit();
         }
         });
+        //Ejercicio 8
+            $("#contenedor").contextmenu(function(){
+                $("p").text("Evento de clic detectado.");
+
+            });
+
+            //Ejercicio 9
+            $("#youtube").click(function(e){
+                e.preventDefault();
+                console.log("No fuiste redireccionado, mejor suerte la proxima :p");
+            })
     });
     </script>
 </head>
@@ -65,6 +76,7 @@
     <li id="azul">Lluvia suave</li>
     <li id="rosa">Lluvia moderada</li>
     <li id="gris">Lluvia fuerte</li>
+    <li id="youtube"><a href="https://www.youtube.com">Ir a Youtube</a></li>
 </ul>
     </nav>
     <hr>
@@ -123,6 +135,15 @@
 <input type="text" id="txtvalor2">
 <button type="button" id="Enviar2">Enviar</button>
 </form>
+<div id="contenedor">
+    <h2>
+        Por que disfrutamos bañarnos bajo lluvia?
+    </h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto repellendus odio omnis quis et voluptatem doloremque quod eligendi dolor necessitatibus. Nulla vitae nobis dolorum nam sint impedit repellendus, praesentium reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut suscipit nisi maiores? Perferendis molestias doloribus facilis nesciunt eligendi quia veniam corrupti, cumque libero cupiditate! Libero deleniti voluptas tempore voluptate.
+    </p>
+</div>
     </main>
     <footer>Carlos Perez 3/26</footer>
 </body>
