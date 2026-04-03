@@ -1,9 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
-    font-family: Arial;
+    font-family: serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    background-color: whitesmoke;
 }
 header{
-    background-color: lightsalmon;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+h1, b, span{
+    text-align: center;
+    font-family: "Playwrite IE", cursive;
+    padding: 6px 2px;
+}
+.navbar{
+    border: 1px solid gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar #logo img{
+    width: 125px;
+    height: 125px;
+    padding: 15px;
+    border-radius: 100%;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.navbar ul li a{
+   color: white;
+   text-decoration: none;
+   position: relative;
+   font-family: "Playwrite IE", cursive;
+}
+.navbar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #FFDAB3;
+    transition: width 0.3s ease-in-out;
+}
+.navbar ul li a:hover::after{
+width: 100%;
+}
+#principal img{
+    height: auto;
+    width: 100%;
+    padding: 1px;
+}
+#reservar{
+padding: 10px 20px;
+font-weight: 200;
+color: white;
+background: #753B00;
+border: 1px solid #FFDBB8;
+border-radius: 5px;
+transition: all 0.3s;
+font-size: 20px;
+}
+#reservar:hover{
+    background: #753B00;
+    border: 1px solid white;
+}
+main{
+    display:contents;
+}
+#restaurante, #comida{
+    display: flex;
+    background: #B9A2A2;
+    color: white;
+    border: 1px solid black;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
+
+#restaurante img, #comida img{
+    height: auto;
+    width: 50%;
+}
+#horarios{
+background: #775A5A;
+color: white;
+}
+#horarios img{
+    height: 700px;
+    width: 100%;
+}
+#restaurante p, #comida p{
+justify-content: center;
+
+}
+#mapa iframe{
+    height: 400px;
+    width: 100%;
+}
+
+#restaurante button, #comida button{
+    display: block;
 }
