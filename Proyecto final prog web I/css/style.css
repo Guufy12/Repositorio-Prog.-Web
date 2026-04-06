@@ -17,7 +17,33 @@ header{
     height: auto;
     width: 100%;
 }
+#principal{
+    position: relative;
+} 
 
+#principal img{
+    height: auto;
+    width: 100%;
+    padding: 1px;
+    display: block;
+}
+
+
+#contenido-principal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 h1, b, span{
     text-align: center;
     font-family: "Playwrite IE", cursive;
@@ -63,11 +89,7 @@ h1, b, span{
 .navbar ul li a:hover::after{
 width: 100%;
 }
-#principal img{
-    height: auto;
-    width: 100%;
-    padding: 1px;
-}
+
 #reservar{
 padding: 10px 20px;
 font-weight: 200;
@@ -82,12 +104,10 @@ font-size: 20px;
     background: #753B00;
     border: 1px solid white;
 }
-main{
-    display:contents;
-}
+
 #restaurante, #comida{
     display: flex;
-    background: #B9A2A2;
+background: #775A5A;
     color: white;
     border: 1px solid black;
 }
@@ -108,10 +128,7 @@ color: white;
     height: 700px;
     width: 100%;
 }
-#restaurante p, #comida p{
-justify-content: center;
 
-}
 #mapa iframe{
     height: 400px;
     width: 100%;
@@ -119,4 +136,28 @@ justify-content: center;
 
 #restaurante button, #comida button{
     display: block;
+}
+
+#contenido-restaurante{
+    padding: 6%;
+    text-align: justify;
+    
+}
+
+#comida{
+flex-direction: row-reverse;
+}
+#contenido-comida{
+    padding: 6%;
+    text-align: justify;
+
+}
+#horarios{
+    position: relative;
+}
+#horarios img{
+     height: auto;
+    width: 100%;
+    padding: 1px;
+    display: block;   
 }
