@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: serif;
     margin: 0;
@@ -46,7 +46,7 @@ button {
 }
 h1, b, span{
     text-align: center;
-    font-family: "Playwrite IE", cursive;
+    font-family: "Saira Stencil", sans-serif;
     padding: 6px 2px;
 }
 .navbar{
@@ -68,13 +68,13 @@ h1, b, span{
 .navbar ul li{
     list-style: none;
     padding: 0 15px;
-    font-size: 20px;
+    font-size: 40px;
 }
 .navbar ul li a{
    color: white;
    text-decoration: none;
    position: relative;
-   font-family: "Playwrite IE", cursive;
+   font-family: "Saira Stencil", sans-serif;
 }
 .navbar ul li a::after{
     content: "";
@@ -124,10 +124,7 @@ p{
 background: #775A5A;
 color: white;
 }
-#horarios img{
-    height: 700px;
-    width: 100%;
-}
+
 
 #mapa iframe{
     height: 400px;
@@ -154,10 +151,21 @@ flex-direction: row-reverse;
 }
 #horarios{
     position: relative;
+    border: 1px solid black;
 }
 #horarios img{
-     height: auto;
     width: 100%;
+    display: block;
     padding: 1px;
-    display: block;   
+}
+#contenido-horarios{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 80px;
+    border-radius: 5px;
 }
