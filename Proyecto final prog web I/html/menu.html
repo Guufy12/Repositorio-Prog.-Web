@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante | Buon Appetito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilomenu.css">
+    <link rel="stylesheet" href="/css/estilosnav.css">
 
 </head>
 <body>
@@ -13,93 +15,254 @@
         <h1>
             Restaurante Buon Appetito
         </h1>
-       <a href="/index.html"><img src="/assets/logo bon appetito.png" alt="logo" width="200px" height="200px"></a>
 
 <nav class="navbar">
+        <a id="logo" href="/index.html"><img src="/assets/nosotros/logo buon appetito.png" alt="logo" width="250px" height="250px"></a>
+
   <ul>
     <li><a href="/index.html">Inicio</a></li>
     <li><a href="/html/nosotros.html">Nosotros</a></li>
     <li><a href="/html/menu.html">Menu</a></li>
     <li><a href="/html/contacto.html">Contacto</a></li>
-    <li><a href="/html/reserva.html">Reserva</a></li>
   </ul>
-    </nav>
-    <h1>Nuestro menu</h1>
-    </header>
-    <hr>
-    <main>
-        <div id="menu">
-            <h2>Pizzas</h2>
-            <h3>
-                Pizza Napolitana
-            </h3>
-            <img src="/assets/pizza napolitana.jpg" alt="Pizza">
-            <hr>
-            <h2>Hamburguesa</h2>
-            <h3>
-                Hamburgusa Gourmet
-            </h3>
-            <img src="/assets/hamburguesa gourmet.jpg" alt="Hamburguesa">
-            <hr>
-            <h2>Pastas</h2>
-            <h3>Pasta carbonara</h3>
-            <img src="/assets/Pasta carbonara.webp" alt="carbonara">
-            <h3>Pasta Alfredo</h3>
-            <img src="/assets/Pasta_Alfredo.jpg" alt="Alfredo">
-            <h3>Spaguetti Bolognesa</h3>
-            <img src="/assets/spaghetti-bolognese.webp" alt="">
-            <hr>
+        <button id="reservar"> Reserva Ya</button>
 
-            <h2>Sushi</h2>
-            <h3>
-                Sushi Tradicional
-            </h3>
-            <img src="/assets/sushi-variado-tradicional_91be2c41_600x600.jpg" alt="Sushi">
-            <hr>   
-            
-            <h2>Steak</h2>
-            <h3>
-                Ternera Estilo New York
-            </h3>
-            <img src="/assets/entrecot-de-ternera.webp" alt="Ternera" width="650px" height="500px">
-            <hr>          
-            
-            <h2>Tacos</h2>
-            <h3>
-                Taco mixto
-            </h3>
-            <img src="/assets/Tacos.jpg" alt="Taco">
-            <hr>      
-            
-            <h2>Pollos</h2>
-            <h3>
-                Pollo frito
-            </h3>
-            <img src="/assets/pollo frito.avif" alt="pollo">
-            <hr> 
-            
-            <h2>Paella</h2>
-            <h3>
-                Paella de Mariscos
-            </h3>
-            <img src="/assets/paella-de-marisco_00000000_240903144336_1200x1200.jpg" alt="paella">
-            <hr>
-            
-            <h2>Ramen</h2>
-            <h3>
-                Ramen Tradicional
-            </h3>
-            <img src="/assets/ramen.jpg" alt="ramen">
-            <hr>    
-            
-            <h2>Lasagna</h2>
-            <h3>
-                Pizza Napolitana
-            </h3>
-            <img src="/assets/Homemade-lasagna.png" alt="Lasagna">
-            <hr>
+    </nav>
+    </header>
+ <main class="container mt-5">
+
+  <h1 class="text-center mb-5">Nuestro Menú</h1>
+
+  <!-- PASTAS -->
+  <section class="mb-5">
+    <h2 class="mb-4">Pastas</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/Pasta carbonara.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pasta Carbonara</h5>
+          </div>
         </div>
-        <button>Ver Menu</button>
-    </main>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/Pasta_Alfredo.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pasta Alfredo</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/spaghetti-bolognese.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Spaghetti Bolognesa</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIZZAS -->
+  <section class="mb-5">
+    <h2 class="mb-4">Pizzas</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/pizza napolitana.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pizza Napolitana</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/comidas/pizzas/pizza-margherita-paulina-cocina-recetas.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pizza Margarita</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/comidas/pizzas/pizza-with-pepperoni-cheese-table_1271020-790.avif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pizza de Pepperoni</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HAMBURGUESAS -->
+  <section class="mb-5">
+    <h2 class="mb-4">Hamburguesas</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/hamburguesa gourmet.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Hamburguesa Gourmet</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/hamburguesas/doble queso.jpg"><div class="card-body"><h5>Hamburguesa Doble queso</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/hamburguesas/fe9eb8404a04a73793e9e6907f9d9c69_HAMBURGUESA_BBQ_-_ABUELITA_.jpg"><div class="card-body"><h5>Hmaburguesa BBQ</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- SUSHI -->
+  <section class="mb-5">
+    <h2 class="mb-4">Sushi</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/sushi-variado-tradicional_91be2c41_600x600.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sushi Tradicional</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/sushi/sushi tempura.jpg"><div class="card-body"><h5>Sushi Tempura</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/sushi/Sushi-rolls-de-salmon-y-Olivada-Olivera-dAtenea.webp"><div class="card-body"><h5>Sushi de roll de salon</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- STEAK -->
+  <section class="mb-5">
+    <h2 class="mb-4">Steak</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/entrecot-de-ternera.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ternera Estilo New York</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/steak/Filet-Mignon_EXPS_TOHD24_277247_MollyBolton_8.jpg"><div class="card-body"><h5>Filet Mignon</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/steak/smoked-ribeye-1200-image.jpg"><div class="card-body"><h5>Ribeye Steak</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- TACOS -->
+  <section class="mb-5">
+    <h2 class="mb-4">Tacos</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/Tacos.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Tacos Mixtos</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/tacos/20240719202231-srf-20pork-20collar-20tacos-20al-20pastor-2-35836-20-1.webp"><div class="card-body"><h5>Tacos al pastor</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/tacos/iStock-960337396-3beef-barbacoa-tacos-e1695391119564-700x535.jpg"><div class="card-body"><h5>Tacos de carne asada</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- POLLOS -->
+  <section class="mb-5">
+    <h2 class="mb-4">Pollos</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/pollo frito.avif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Pollo Frito</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/pollos/citrus-grilled-chicken.webp"><div class="card-body"><h5>Pollo a la parrilla</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/pollos/pollo-salsa-barbacoa.jpg"><div class="card-body"><h5>Pollo horneado con salsa BBQ</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- PAELLA -->
+  <section class="mb-5">
+    <h2 class="mb-4">Paella</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/paella-de-marisco_00000000_240903144336_1200x1200.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Paella de Mariscos</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/paellas/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__07__20190618-grilled-paella-vicky-w.jpg"><div class="card-body"><h5>Paella Mixta</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/paellas/0178-paella-valenciana-chefstv-wide-web.webp"><div class="card-body"><h5>Paella Valenciana</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- RAMEN -->
+  <section class="mb-5">
+    <h2 class="mb-4">Ramen</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/ramen.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ramen Tradicional</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/ramen/foto-receta-miso-de-ramen-y-crijiente-de-pollo-1-scaled.jpg"><div class="card-body"><h5>Ramen de Pollo</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/ramen/spicy_tonkotsu_ramen.jpg"><div class="card-body"><h5>Ramen Picante</h5></div></div></div>
+
+    </div>
+  </section>
+
+  <!-- LASAGNA -->
+  <section class="mb-5">
+    <h2 class="mb-4">Lasagna</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="/assets/Homemade-lasagna.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Lasagna</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/lasagna/lasana_de_verduras_y_pollo_d137a14b_1200x1200.jpg"><div class="card-body"><h5>Lasagna de Pollo</h5></div></div></div>
+      <div class="col-md-4"><div class="card h-100"><img src="/assets/comidas/lasagna/lasagna vegetariana.webp"><div class="card-body"><h5>Lasagna Vegetariana</h5></div></div></div>
+
+    </div>
+  </section>
+
+</main>
 </body>
 </html>
