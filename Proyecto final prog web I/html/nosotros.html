@@ -6,93 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante | Buon Appetito</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/estilosnav.css">
+    <link rel="stylesheet" href="/css/estilosnav.css"> 
     <link rel="stylesheet" href="/css/estilonosotros.css">
-    <link rel="icon" type="img/png" href="/assets/logo bon appetito.png">
+    <link rel="icon" type="image/png" href="/assets/logo bon appetito.png">
 
 </head>
 <body>
-        <header>
-        <h1>
-            Restaurante Buon Appetito
-        </h1>
-<nav class="navbar">
-    <a id="logo" href="/index.html"><img src="/assets/nosotros/logo buon appetito.png" alt="logo" width="250px" height="250px"></a>
 
-  <ul>
-    <li><a href="/index.html">Inicio</a></li>
-    <li><a href="/html/nosotros.html">Nosotros</a></li>
-    <li><a href="/html/menu.html">Menu</a></li>
-    <li><a href="/html/contacto.html">Contacto</a></li>
-  </ul>
-      <button id="reservar"> Reserva Ya</button>
-    </nav>
-    </header>
-    <main >
-          <h2 class="text-center mb-5">Sobre nosotros</h2>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
 
-         <div id="nosotros1" class="row align-items-center">
-            <div class="col-md-6">
-            <h2>
-                Nuestro Restaurante
-            </h2>
+    <a class="navbar-brand" href="/index.html">
+      <img src="/assets/nosotros/logo buon appetito.png" width="60" class="me-2">
+      Buon Appetito
+    </a>
 
-<p>
-En Buon Appetito, ofrecemos un espacio diseñado para brindar comodidad y una experiencia agradable a cada cliente. Nuestro restaurante combina un ambiente moderno y acogedor, ideal tanto para encuentros casuales como para ocasiones especiales.
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-Cuidamos cada detalle del entorno, desde la organización del espacio hasta la calidad del servicio, con el objetivo de crear un lugar donde los clientes se sientan a gusto desde su llegada. Nos enfocamos en mantener un estándar alto en atención, limpieza y presentación, garantizando una experiencia completa y satisfactoria.</p>
-</div>   
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/html/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/contacto.html">Contacto</a></li>
+      </ul>
 
-<div class="col-md-6">
-    
-<div id="carrusel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-
-        <div class="carousel-item active">
-      <img src="/assets/nosotros/restaurante buon appetito.png" class="d-block w-100" alt="resaurante 1">
-      </div>
-    <div class="carousel-item">
-      <img src="/assets/nosotros/restaurante.jpg" class="d-block w-100" alt="resaurante 1">
+      <a href="#" id="reserva" class="btn ms-3">Reserva Ya</a>
     </div>
 
-    <div class="carousel-item">
-      <img src="/assets/nosotros/happy-waiters-bringing-food-table-serving-group-friends-restaurant.jpg" class="d-block w-100" alt="Plato 2">
-    </div>
-
-    <div class="carousel-item">
-      <img src="/assets/nosotros/side-view-male-chef-flambeing-dish.jpg" class="d-block w-100" alt="Plato 3">
-    </div>
   </div>
+</nav>
+<header class="bg-dark text-white text-center py-5" style="background: url('/assets/nosotros/restaurante.jpg') center/cover no-repeat;">
+    <div class="container">
+        <h1 class="fw-bold">Sobre Nosotros</h1>
+        <p class="lead">Conoce nuestra esencia y pasión por la buena comida</p>
+    </div>
+</header>
+    <main >
+      
+<section id="nosotros1" class="row align-items-center mb-5">
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
+    <div id="nosotros1-contenido" class="col-md-6">
+        <h2 class="fw-bold mb-3">Nuestro Restaurante</h2>
+        <p class="text-muted">
+            En Buon Appetito, ofrecemos un espacio diseñado para brindar comodidad y una experiencia agradable a cada cliente. 
+            Nuestro restaurante combina un ambiente moderno y acogedor, ideal tanto para encuentros casuales como para ocasiones especiales.
+        </p>
+        <p class="text-muted">
+            Cuidamos cada detalle del entorno, desde la organización del espacio hasta la calidad del servicio, garantizando una experiencia completa.
+        </p>
+    </div>
 
-  <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
- </div>
-</div>
+    <div class="col-md-6">
+        <div id="carrusel" class="carousel slide shadow rounded" data-bs-ride="carousel">
 
-    <div id="nosotros2" class="row align-items-center mt-5">
-        <div class="col-md-6">
-            <h2>
-                Nuestra comida
-            </h2>
-            <p>
-En Buon Appetito, la cocina es el resultado de la combinación entre creatividad, técnica y calidad. Cada platillo es preparado con atención al detalle, buscando resaltar los sabores naturales de los ingredientes y ofrecer una presentación cuidada que refleje el estilo gourmet del restaurante.
+            <div class="carousel-inner rounded">
 
-Nuestra propuesta integra opciones reconocidas de la gastronomía internacional como la Pasta, la Pizza, el Sushi y cortes de Steak, adaptadas a una línea culinaria moderna que busca satisfacer diferentes gustos sin perder la esencia de cada preparación.
+                <div class="carousel-item active">
+                    <img src="/assets/nosotros/restaurante buon appetito.png" class="d-block w-100" alt="Interior del restaurante">
+                </div>
 
-Nos distinguimos por mantener un equilibrio entre sabor, presentación y consistencia, ofreciendo platos que no solo cumplen con altos estándares de calidad, sino que también aportan una experiencia agradable en cada visita.            </p>
-            <button>Ver Menu</button>
-        </div>
-           <div class="col-md-6">
-            <img src="/assets/nosotros/dinner-table-with-foods-soft-drinks-restaurant.jpg" class="img-fluid">
+                <div class="carousel-item">
+                    <img src="/assets/nosotros/restaurante.jpg" class="d-block w-100" alt="Ambiente del restaurante">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/assets/nosotros/happy-waiters-bringing-food-table-serving-group-friends-restaurant.jpg" class="d-block w-100" alt="Servicio al cliente">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/assets/nosotros/side-view-male-chef-flambeing-dish.jpg" class="d-block w-100" alt="Chef preparando comida">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
         </div>
     </div>
-           
 
+</section>
+
+   <section id="nosotros2" class="row align-items-center">
+
+    <div id="nosotros2-contenido" class="col-md-6 order-2 order-md-2">
+        <h2 class="fw-bold mb-3">Nuestra Comida</h2>
+        <p class="text-muted">
+            En Buon Appetito, la cocina es el resultado de la combinación entre creatividad, técnica y calidad. Cada platillo es preparado con atención al detalle.
+        </p>
+        <p class="text-muted">
+            Nuestra propuesta integra Pasta, Pizza, Sushi y Steak, adaptados a una línea moderna que busca satisfacer todos los gustos.
+        </p>
+
+        <a href="/html/menu.html" class="btn btn-outline-dark mt-2">Ver Menú</a>
+    </div>
+
+    <div class="col-md-6 order-1 order-md-1">
+        <img src="/assets/nosotros/dinner-table-with-foods-soft-drinks-restaurant.jpg" class="img-fluid rounded shadow" alt="Comida del restaurante">
+    </div>
+
+</section>         
     </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2026 Buon Appetito - Todos los derechos reservados</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

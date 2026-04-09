@@ -15,18 +15,31 @@
             Restaurante Buon Appetito
         </h1>
 
-<nav class="navbar">
-    <a id="logo" href="index.html"><img src="assets/logo bon appetito.png" alt="logo" width="200px" height="200px"></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
 
-  <ul>
-    <li><a href="/index.html">Inicio</a></li>
-    <li><a href="/html/nosotros.html">Nosotros</a></li>
-    <li><a href="/html/menu.html">Menu</a></li>
-    <li><a href="/html/contacto.html">Contacto</a></li>
+    <a class="navbar-brand" href="/index.html">
+      <img src="/assets/nosotros/logo buon appetito.png" width="60" class="me-2">
+      Buon Appetito
+    </a>
 
-  </ul>
-      <button id="reservar"> Reserva Ya</button>
-    </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="/html/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/contacto.html">Contacto</a></li>
+      </ul>
+
+      <a href="#" id="reserva" class="btn ms-3">Reserva Ya</a>
+    </div>
+
+  </div>
+</nav>
     </header>
 
     <main>
@@ -80,8 +93,9 @@ Nos enfocamos en mantener consistencia en cada preparación, cuidando tanto el s
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.0188120837003!2d-70.16879321099782!3d18.660618994080124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaff10369715fb3%3A0x74266b5967e6f4d!2sSuper%20Colmado%20La%20Bodega%20AyD!5e0!3m2!1ses-419!2sdo!4v1774557088795!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
     </main>
-    <footer>
-        ©2026 Restaurante Buon Appetito. Todos los derechos reservados.
-    </footer>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2026 Buon Appetito - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>

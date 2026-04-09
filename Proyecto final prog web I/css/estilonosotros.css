@@ -1,9 +1,7 @@
-#nosotros1{
-    display: flex;
+#nosotros1-contenido{
+padding: 5%;
 }
-#nosotros2{
-    display: flex;
-}
-#icomida{
+#nosotros2-contenido{
+  padding: 5%;
 
 }
