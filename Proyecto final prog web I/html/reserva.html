@@ -1,52 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante | Buon Appetito</title>
-
+    <title>Reservas | Buon Appetito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilosnav.css">
+    <link rel="stylesheet" href="/css/estiloreserva.css">
+    <link rel="icon" type="img/png" href="/assets/logo bon appetito.png">
 </head>
+
 <body>
-        <header>
-        <h1>
-            Restaurante Buon Appetito
-        </h1>
-       <a href="/index.html"><img src="/assets/logo bon appetito.png" alt="logo" width="200px" height="200px"></a>
 
-<nav class="navbar">
-  <ul>
-    <li><a href="/index.html">Inicio</a></li>
-    <li><a href="/html/nosotros.html">Nosotros</a></li>
-    <li><a href="/html/menu.html">Menu</a></li>
-    <li><a href="/html/contacto.html">Contacto</a></li>
-    <li><a href="/html/reserva.html">Reserva</a></li>
-  </ul>
-    </nav>
-    <h1>
-        Sobre Nosotros
-    </h1>
-    </header>
-    <hr>
-    <main>
-        <div id="nosotros1">
-            <h2>
-                Nuestro Restaurante
-            </h2>
-<p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam iusto a quos ducimus reprehenderit fugit omnis assumenda vero maxime. Cupiditate quo doloremque earum distinctio perferendis eius, non cumque iste laborum.
-</p>
-        </div id="nosotros2">
-        <div>
-            <h2>
-                Nuestra comida
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo vero iusto, mollitia debitis aliquid doloremque unde, id autem cum, vel impedit nam dolor est quis quas fugit esse architecto repellendus?
-            </p>
-            <button>Ver Menu</button>
 
-        </div>
-    </main>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
+
+    <a class="navbar-brand" href="/index.html">
+      <img src="/assets/nosotros/logo buon appetito.png" width="60" class="me-2">
+      Buon Appetito
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/html/reserva.html">Reserva</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<header class="bg-dark text-white text-center py-5"
+style="background: url('/assets/nosotros/reservas-online.jpg') center/cover no-repeat; min-height: 550px;">
+    <div id="contenedor1" class="container">
+        <h1 class="fw-bold">Reserva tu mesa</h1>
+        <p class="lead">Disfruta una experiencia única con nosotros</p>
+    </div>
+</header>
+
+<main class="container my-5">
+
+<div class="row shadow rounded overflow-hidden">
+
+    <div class="col-md-6 d-none d-md-block p-0"
+    style="background: url('/assets/nosotros/Reserva-Roma-Lazio-Secrets62-683x1024.avif') center/cover no-repeat; min-height: 500px;">
+    </div>
+
+    <div class="col-md-6 bg-light p-5">
+
+        <h2 class="fw-bold mb-4">Haz tu reserva</h2>
+
+        <form>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre completo">
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Correo electrónico">
+            </div>
+
+            <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Teléfono">
+            </div>
+
+            <div class="mb-3">
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <input type="time" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Cantidad de personas">
+            </div>
+
+            <div class="mb-3">
+                <textarea class="form-control" rows="3" placeholder="Comentarios (opcional)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100">Reservar ahora</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2026 Buon Appetito - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
